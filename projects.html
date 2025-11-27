@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Vasu Thakur</title>
+    <meta name="description"
+        content="Explore my AI/ML projects including LangGraph applications, RAG systems, and agentic AI chatbots">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="logo">
+                    <span class="logo-text">VT.</span>
+                </a>
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="projects.html" class="nav-link active">Projects</a>
+                    <a href="publications.html" class="nav-link">Publications</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                    <a href="https://github.com/vt0299" target="_blank" class="nav-link nav-link-github">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">My <span class="gradient-text">Projects</span></h1>
+            <p class="page-subtitle">Exploring the intersection of AI, machine learning, and intelligent systems</p>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="langgraph">LangGraph</button>
+                <button class="filter-btn" data-filter="rag">RAG Systems</button>
+                <button class="filter-btn" data-filter="chatbot">Chatbots</button>
+                <button class="filter-btn" data-filter="generation">Generation</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="projects-section">
+        <div class="container">
+            <div class="projects-grid-full">
+                <!-- Project 1: Biomedical RAG -->
+                <div class="project-card" data-category="rag">
+                    <div class="project-header">
+                        <div class="project-icon">🏥</div>
+                        <div class="project-tags">
+                            <span class="tag">RAG</span>
+                            <span class="tag">Healthcare</span>
+                            <span class="tag">Python</span>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Biomedical RAG System</h3>
+                    <p class="project-description">
+                        A sophisticated Retrieval-Augmented Generation system designed for biomedical information
+                        retrieval.
+                        Features custom agent "Cellio" for intelligent medical document processing and query handling.
+                    </p>
+                    <div class="project-tech">
+                        <div class="tech-pill">LangChain</div>
+                        <div class="tech-pill">Vector DB</div>
+                        <div class="tech-pill">Medical NLP</div>
+                    </div>
+                    <div class="project-footer">
+                        <a href="https://github.com/vt0299/Biomedical-RAG-system" target="_blank" class="project-link">
+                            View on GitHub
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2: Blog Generation with Translation -->
+                <div class="project-card" data-category="generation langgraph">
+                    <div class="project-header">
+                        <div class="project-icon">🌐</div>
+                        <div class="project-tags">
+                            <span class="tag">LangGraph</span>
+                            <span class="tag">Translation</span>
+                            <span class="tag">API</span>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Blog Generation with Translation</h3>
+                    <p class="project-description">
+                        Multilingual blog generation system powered by LangGraph. Automatically generates high-quality
+                        blog content and translates it to multiple languages with LangGraph Studio integration.
+                    </p>
+                    <div class="project-tech">
+                        <div class="tech-pill">LangGraph</div>
+                        <div class="tech-pill">FastAPI</div>
+                        <div class="tech-pill">Multi-language</div>
+                    </div>
+                    <div class="project-footer">
+                        <a href="https://github.com/vt0299/Blog-Generation-with-Translation" target="_blank"
+                            class="project-link">
+                            View on GitHub
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3: Blog Generation Agent -->
+                <div class="project-card" data-category="generation langgraph">
+                    <div class="project-header">
+                        <div class="project-icon">✍️</div>
+                        <div class="project-tags">
+                            <span class="tag">LangGraph</span>
+                            <span class="tag">Agent</span>
+                            <span class="tag">Content</span>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Blog Generation Agent</h3>
+                    <p class="project-description">
+                        Agentic AI system for automated blog content creation. Uses graph-based workflow orchestration
+                        for research, writing, and content optimization with LangGraph architecture.
+                    </p>
+                    <div class="project-tech">
+                        <div class="tech-pill">LangGraph</div>
+                        <div class="tech-pill">Groq</div>
+                        <div class="tech-pill">Streamlit</div>
+                    </div>
+                    <div class="project-footer">
+                        <a href="https://github.com/vt0299/Blog-Generation-Agent" target="_blank" class="project-link">
+                            View on GitHub
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 4: AI News Agentic -->
+                <div class="project-card" data-category="langgraph chatbot">
+                    <div class="project-header">
+                        <div class="project-icon">📰</div>
+                        <div class="project-tags">
+                            <span class="tag">LangGraph</span>
+                            <span class="tag">Stateful</span>
+                            <span class="tag">News</span>
+                        </div>
+                    </div>
+                    <h3 class="project-title">AI News Agentic</h3>
+                    <p class="project-description">
+                        Stateful AI application combining news summarization with conversational chatbot capabilities.
+                        Features daily AI news summaries and interactive Q&A powered by LangGraph state management.
+                    </p>
+                    <div class="project-tech">
+                        <div class="tech-pill">LangGraph</div>
+                        <div class="tech-pill">Streamlit</div>
+                        <div class="tech-pill">News API</div>
+                    </div>
+                    <div class="project-footer">
+                        <a href="https://github.com/vt0299/AI-News-Agentic---LangGraph-Stateful-AI-Application"
+                            target="_blank" class="project-link">
+                            View on GitHub
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M18 13v6a2 12 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 5: LangGraph Chatbot with Web Search -->
+                <div class="project-card" data-category="langgraph chatbot">
+                    <div class="project-header">
+                        <div class="project-icon">🔍</div>
+                        <div class="project-tags">
+                            <span class="tag">LangGraph</span>
+                            <span class="tag">Web Search</span>
+                            <span class="tag">Tools</span>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Agentic AI Chatbot with Web Search</h3>
+                    <p class="project-description">
+                        Intelligent conversational AI with real-time web search integration. Leverages tool-calling
+                        capabilities to provide up-to-date information through DuckDuckGo search integration.
+                    </p>
+                    <div class="project-tech">
+                        <div class="tech-pill">LangGraph</div>
+                        <div class="tech-pill">Tool Calling</div>
+                        <div class="tech-pill">Groq API</div>
+                    </div>
+                    <div class="project-footer">
+                        <a href="https://github.com/vt0299/LangGraph-Agentic-AI-Chatbot-with-Web-Search" target="_blank"
+                            class="project-link">
+                            View on GitHub
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 6: LangGraph Agentic AI Chatbot -->
+                <div class="project-card" data-category="langgraph chatbot">
+                    <div class="project-header">
+                        <div class="project-icon">💬</div>
+                        <div class="project-tags">
+                            <span class="tag">LangGraph</span>
+                            <span class="tag">Chatbot</span>
+                            <span class="tag">Stateful</span>
+                        </div>
+                    </div>
+                    <h3 class="project-title">LangGraph Agentic AI Chatbot</h3>
+                    <p class="project-description">
+                        Sophisticated conversational AI system built on stateful graph-based architecture. Features
+                        context-aware conversations with support for multiple LLM providers including Groq and OpenAI.
+                    </p>
+                    <div class="project-tech">
+                        <div class="tech-pill">LangGraph</div>
+                        <div class="tech-pill">State Management</div>
+                        <div class="tech-pill">Multi-LLM</div>
+                    </div>
+                    <div class="project-footer">
+                        <a href="https://github.com/vt0299/LangGraph-Agentic-AI-Chatbot" target="_blank"
+                            class="project-link">
+                            View on GitHub
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 7: Generative AI with Ollama -->
+                <div class="project-card" data-category="chatbot">
+                    <div class="project-header">
+                        <div class="project-icon">🤖</div>
+                        <div class="project-tags">
+                            <span class="tag">Ollama</span>
+                            <span class="tag">Gemma</span>
+                            <span class="tag">Local LLM</span>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Generative AI App with Ollama</h3>
+                    <p class="project-description">
+                        Streamlit-based chat application using Ollama and Google's Gemma model. Demonstrates local
+                        LLM deployment with full conversation history and an elegant user interface.
+                    </p>
+                    <div class="project-tech">
+                        <div class="tech-pill">Ollama</div>
+                        <div class="tech-pill">Gemma</div>
+                        <div class="tech-pill">Streamlit</div>
+                    </div>
+                    <div class="project-footer">
+                        <a href="https://github.com/vt0299/Simple-Generative-AI-app-with-Ollama-using-Gemma"
+                            target="_blank" class="project-link">
+                            View on GitHub
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 8: RAG Article Generator -->
+                <div class="project-card" data-category="rag generation">
+                    <div class="project-header">
+                        <div class="project-icon">📝</div>
+                        <div class="project-tags">
+                            <span class="tag">RAG</span>
+                            <span class="tag">Generation</span>
+                            <span class="tag">Wikipedia</span>
+                        </div>
+                    </div>
+                    <h3 class="project-title">RAG-Based Article Generator</h3>
+                    <p class="project-description">
+                        Article generation system leveraging RAG architecture for Wikipedia content and file-based
+                        sources. Combines retrieval with generation for factual, well-researched content creation.
+                    </p>
+                    <div class="project-tech">
+                        <div class="tech-pill">RAG</div>
+                        <div class="tech-pill">Wikipedia API</div>
+                        <div class="tech-pill">Vector Search</div>
+                    </div>
+                    <div class="project-footer">
+                        <a href="https://github.com/vt0299/RAG-based-Article-Generator" target="_blank"
+                            class="project-link">
+                            View on GitHub
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 9: Image to Prompts -->
+                <div class="project-card" data-category="generation">
+                    <div class="project-header">
+                        <div class="project-icon">🖼️</div>
+                        <div class="project-tags">
+                            <span class="tag">Vision AI</span>
+                            <span class="tag">Captioning</span>
+                            <span class="tag">Research</span>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Image to Prompts</h3>
+                    <p class="project-description">
+                        Advanced image captioning system comparing OFA, BLIP, and GIT models on VizWiz dataset.
+                        Comprehensive evaluation and comparative analysis of state-of-the-art vision-language models.
+                    </p>
+                    <div class="project-tech">
+                        <div class="tech-pill">OFA</div>
+                        <div class="tech-pill">BLIP</div>
+                        <div class="tech-pill">GIT</div>
+                    </div>
+                    <div class="project-footer">
+                        <a href="https://github.com/vt0299/Image-to-prompts" target="_blank" class="project-link">
+                            View on GitHub
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 10: Bomberman RL -->
+                <div class="project-card" data-category="">
+                    <div class="project-header">
+                        <div class="project-icon">🎮</div>
+                        <div class="project-tags">
+                            <span class="tag">RL</span>
+                            <span class="tag">Gaming</span>
+                            <span class="tag">Agent</span>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Bomberman Reinforcement Learning</h3>
+                    <p class="project-description">
+                        Reinforcement learning agent trained to play Bomberman. Demonstrates advanced RL techniques
+                        for game AI including Q-learning and policy optimization in complex environments.
+                    </p>
+                    <div class="project-tech">
+                        <div class="tech-pill">RL</div>
+                        <div class="tech-pill">Game AI</div>
+                        <div class="tech-pill">Python</div>
+                    </div>
+                    <div class="project-footer">
+                        <a href="https://github.com/vt0299/Bomberman-Reinforcement-learning" target="_blank"
+                            class="project-link">
+                            View on GitHub
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="logo">
+                        <span class="logo-bracket">&lt;</span>
+                        <span class="logo-text">VT</span>
+                        <span class="logo-bracket">/&gt;</span>
+                    </div>
+                    <p class="footer-tagline">Building the future with AI</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Navigation</h4>
+                        <a href="index.html">Home</a>
+                        <a href="projects.html">Projects</a>
+                        <a href="about.html">About</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <a href="https://github.com/vt0299" target="_blank">GitHub</a>
+                        <a href="mailto:contact@vasuthakur.dev">Email</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Vasu Thakur. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
