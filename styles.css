@@ -664,6 +664,13 @@ a {
 }
 
 /* ===========================
+   Utility Classes
+   =========================== */
+.hidden {
+    display: none !important;
+}
+
+/* ===========================
    Filter Section - Enhanced
    =========================== */
 .filter-section {
